@@ -1,0 +1,183 @@
+﻿@using OilDiversity.Web.Utility
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Oil Diversity Global | @ViewBag.Title</title>
+
+    <meta property="og:url" content="@HttpContext.Current.Request.Url" />
+    <meta property="og:type" content="@ViewBag.MetaType" />
+    <meta property="og:title" content="@ViewBag.MetaTitle" />
+    <meta property="og:description" content="@ViewBag.MetaDescription" />
+    <meta property="og:image" content="@(string.IsNullOrWhiteSpace(ViewBag.MetaImage) ? "https://cdn.oildiversity.com/app/images/logo/logo.svg" : ViewBag.MetaImage)" />
+
+    <meta name="description" content="Oil Diversity Global promotes Diversity in Age, Gender, Race, Religion, Physical Ability and Sexual Orientation and sets an industry standard. We provide a centralised HR Global Portal addressing niche areas within diversity which is only accessible by our affiliated partners (no recruitment companies). This is set out in a way we can monitor industry statistics and promote diversity. It is essentially a global ‘go to’ system to encourage companies to work together. Our central system also encourages Staff Retention within the Oil & Gas Industry and incorporates forward thinking graduate schemes and redundancy share programmes to encourage companies to retain key skills within the industry as we face an ageing population of workers and address a current skills gap. Our site also encompasses a community network portal and business co-operation scheme for our Partners to promote their services and requirements.">
+    <meta name="keywords" content="recruitment, HR, Jobs, diversity, skills shortage, oil, gas, energy, executive search, redundancy, oil & gas, indigenous, women in oil, graduate, advertising, job postings, business, community, workplace, ethnic, human resources, hiring, employment, employer, employee, contractor, personnel, petroleum, exploration, oil companies, sponsorship, downturn, trainees, industry awards, oil woman, oil women, divergent, diversified, diverse, discrimination, discriminatory, racism, acceptance, inclusion, multi-cultural, society, workforce, workplace, cognitive style, professionals, oil industry, jobseekers, recruits, candidate, client, recruiter, job application, application form, networking, business co-operation, multi-cultural, operator, subsea">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="Author" content="Mohammad MalekMakan">
+    <meta http-equiv="CONTENT-LANGUAGE" content="en">
+    <meta name="Designer" content="Mohammad MalekMakan">
+    <meta name="Revisit-After" content="1 Days">
+    <meta name="Rating" content="general">
+    <meta name="Distribution" content="Global">
+    <meta name="Robots" content="index, follow">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+    <link rel="manifest" href="/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#cc0000">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#cc0000">
+
+    <link rel="stylesheet" type="text/css" href="https://oildiversity.com/styles/styles-core.min.css">
+    <link rel="stylesheet" type="text/css" href="https://oildiversity.com/news/content/css/style.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="~/Content/css/custom.css" rel="stylesheet" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            position: relative;
+            width: 100%;
+        }
+
+        .navbar-fixed-top .navbar-collapse {
+            max-height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    @*This Form Is Validated CSRF*@
+    @Html.AntiForgeryToken()
+
+    <!--Fixed Navigation -->
+    <div id="navigation" class="navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Logo -->
+                <a href="@CommonTools.GetCurrentContextUrl()#!" class="navbar-brand">
+                    <img src="https://cdn.oildiversity.com/app/images/logo/logo.svg" class="img img-responsive hidden-sm hidden-xs" alt="logo" />
+                    <img src="https://cdn.oildiversity.com/app/images/logo/logo-solo.svg" class="img img-responsive hidden-lg hidden-md" alt="logo" />
+                </a>
+                <!-- End Logo -->
+                <!-- Responsive Nav Button -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- End Responsive Nav Button -->
+
+            </div>
+
+            <!-- Main Nav -->
+            <nav id="navbar" class="collapse navbar-collapse navbar-right" role="navigation">
+                <ul id="nav" class="nav navbar-nav">
+                    <li><a href="@CommonTools.GetCurrentContextUrl()#!">Home</a></li>
+                    <li><a href="@CommonTools.GetCurrentContextUrl()#!/show/?key=about-us">About Us</a></li>
+                    <li><a href="@CommonTools.GetCurrentContextUrl()#!/show/?key=contact-us">Contact Us</a></li>
+                    <li class="active"><a href="javascript:void(0)">Industry News</a></li>
+                    <li><a href="@CommonTools.GetCurrentContextUrl()#!/show/?key=graduate-schemes">Graduate Schemes</a></li>
+                    <li><a href="@CommonTools.GetCurrentContextUrl()#!/show/?key=community-network">Community Network</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#!/show/?key=quarterly">Current Initiatives<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@CommonTools.GetCurrentContextUrl()#!/show/?key=quarterly-awards">Awards</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="@CommonTools.GetCurrentContextUrl()#!/show/?key=frequently-asked-questions">FAQ's</a></li>
+                </ul>
+            </nav>
+            <!-- End Main Nav -->
+        </div>
+    </div>
+    <!--End Fixed Navigation -->
+    <!-- Main Content -->
+    <div id="home-content-wrapper">
+        @RenderBody()
+    </div>
+
+    <!--End Main Content -->
+    <!-- Social Network -->
+    <div id="social-network-wrapper" class="row">
+        <div class="container">
+            <!--<div class="col-lg-offset-2 col-lg-2 col-md-offset-2 col-md-2 col-sm-3 col-xs-3">-->
+            <!--<a href="//blog.oildiversity.com" target="_blank">-->
+            <!--<i class="fa fa-rss social-icon"></i><span class="hidden-sm hidden-xs">Blog</span>-->
+            <!--</a>-->
+            <!--</div>-->
+            <div class="col-lg-offset-3 col-lg-2 col-md-offset-3 col-md-2 col-sm-offset-3 col-sm-2 col-xs-4">
+                <a href="https://www.facebook.com/oildiversity/" target="_blank">
+                    <i class="fa fa-facebook social-icon"></i><span class="hidden-sm hidden-xs">Facebook</span>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <a href="https://twitter.com/oildiversity" target="_blank">
+                    <i class="fa fa-twitter social-icon"></i><span class="hidden-sm hidden-xs">Twitter</span>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                <a href="https://www.linkedin.com/company/oil-diversity-global-ltd.?trk=prof-following-company-logo" target="_blank">
+                    <i class="fa fa-linkedin social-icon"></i><span class="hidden-sm hidden-xs">Linkedin</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Social Network -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img class="desaturate brand-footer" src="https://cdn.oildiversity.com/app/images/logo/logo-horizontal.svg">
+            <br>
+            <a href="@CommonTools.GetCurrentContextUrl()#!/show/?key=privacy-policy">Privacy Policy</a> | <a href="@CommonTools.GetCurrentContextUrl()#!/show/?key=terms-of-service">Terms of Service</a>
+            <br>
+            <span>
+                Copyright © 2016 B.E.V Oil & Gas. All Rights Reserved.
+                <br>
+                OilDiversityGlobal® is a registered trademark of the B.E.V Oil & Gas Group.
+            </span>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Job Search Button -->
+    <div id="job-search-button-right">
+        <a href="/#!/show/?key=quick-jobs-search" class="btn btn-success quick-job-search-btn"><i class="fa fa-search"></i><span class="hidden-xs">&nbsp;Search Jobs</span></a>
+    </div>
+    <!-- Job Search Button -->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-82865209-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591d7b32b801c132"></script>
+
+</body>
+</html>

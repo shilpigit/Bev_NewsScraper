@@ -1,0 +1,119 @@
+﻿@using OilDiversity.Web.Models
+@{
+    ViewBag.Title = "Industry News";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    //var chart = Html.Action("GetChart");
+
+    //var oilDiversityBlog = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.OilDiversityBlog });
+    var oilPrice = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.OilPrice });
+    var bloomBerg = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.BloomBerg });
+    var spe = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.Spe });
+    var fuelFix = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.FuelFix });
+    var oilVoice = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.OilVoice });
+    //var forbes = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.ForBes });
+    //var shalemarket = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.ShaleMarket });
+    var oilAndGasTechnology = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.OilAndGasTechnology });
+    var energyVoice = Html.Action("GetLatestNewsPileUps", new { sourceName = NewsPileUp.RssSource.EnergyVoice });
+
+    // meta tags view    
+    ViewBag.MetaType = ViewBag.Title;
+    ViewBag.MetaTitle = "Oil Diversity Global® HR Portal.";
+    ViewBag.MetaDescription = "Welcome to Oil Diversity®";
+}
+
+<div id="partial-wrapper" class="container animated fadeIn">
+
+    <div class="row">
+        <h1>@ViewBag.Title</h1>
+    </div>
+
+    <div class="row">
+        <p>Welcome to the Oil Diversity News Page.</p>
+        <p>We hope you enjoy reading these articles and remember this is updated regularly so please come back and visit us!</p>
+    </div>
+
+    @*<div class="row chart-wrapper@(string.IsNullOrEmpty(chart.ToHtmlString()) ? " hidden" : "")">
+        @Html.Raw(chart)
+    </div>*@
+
+    @*<div class="row@(string.IsNullOrEmpty(oilDiversityBlog.ToHtmlString()) ? " hidden" : "")">
+        <a href="http://blog.oildiversity.com" target="_blank">
+            <h3>
+                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Oil Diversity Blog
+            </h3>
+        </a>@oilDiversityBlog
+    </div>*@      
+    
+    <div class="row@(string.IsNullOrEmpty(fuelFix.ToHtmlString()) ? " hidden" : "")">
+        <a href="http://fuelfix.com" target="_blank">
+            <h3>
+                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Courtesy of Fuel Fix
+            </h3>
+        </a>@fuelFix
+    </div>
+
+    <div class="card-wrapper row@(string.IsNullOrEmpty(oilPrice.ToHtmlString()) ? " hidden" : "")">
+        <a href="http://oilprice.com/Latest-Energy-News/World-News" target="_blank">
+            <h3>
+                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Courtesy of Oil Price
+            </h3>
+        </a>@oilPrice
+    </div>
+
+    <div class="row@(string.IsNullOrEmpty(bloomBerg.ToHtmlString()) ? " hidden" : "")">
+        <a href="http://www.bloomberg.com/energy" target="_blank">
+            <h3>
+                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Courtesy of Bloomberg
+            </h3>
+        </a>@bloomBerg
+    </div>
+
+    <div class="row@(string.IsNullOrEmpty(spe.ToHtmlString()) ? " hidden" : "")">
+        <a href="http://www.spe.org" target="_blank">
+            <h3>
+                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Courtesy of Society of Petroleum Engineers
+            </h3>
+        </a>@spe
+    </div>
+
+    <div class="row@(string.IsNullOrEmpty(oilAndGasTechnology.ToHtmlString()) ? " hidden" : "")">
+        <a href="http://www.oilandgastechnology.net/news" target="_blank">
+            <h3>
+                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Courtesy of Oil and Gas Technology News
+            </h3>
+        </a>@oilAndGasTechnology
+    </div>           
+
+    <div class="card-wraaper row@(string.IsNullOrEmpty(energyVoice.ToHtmlString()) ? " hidden" : "")">
+        <a href="http://www.energyvoice.com/category/oilandgas" target="_blank">
+            <h3>
+                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Courtesy of Energy Voice
+            </h3>
+        </a>@energyVoice
+    </div>   
+    
+    <div class="row@(string.IsNullOrEmpty(oilVoice.ToHtmlString()) ? " hidden" : "")">
+        <a href="http://www.oilvoice.com" target="_blank">
+            <h3>
+                <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Courtesy of Oil Voice
+            </h3>
+        </a>@oilVoice
+    </div>
+
+    @*<div class="row@(string.IsNullOrEmpty(forbes.ToHtmlString()) ? " hidden" : "")">
+            <a href="http://www.forbes.com" target="_blank">
+                <h3>
+                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Courtesy of Forbes
+                </h3>
+            </a>@forbes
+        </div>
+
+        <div class="row@(string.IsNullOrEmpty(shalemarket.ToHtmlString()) ? " hidden" : "")">
+            <a href="http://www.shalemarket.com" target="_blank">
+                <h3>
+                    <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;Courtesy of Shalemarket
+                </h3>
+            </a>@shalemarket
+        </div>*@
+</div>

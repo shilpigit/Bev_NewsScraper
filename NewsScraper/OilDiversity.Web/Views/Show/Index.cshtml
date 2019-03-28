@@ -1,0 +1,57 @@
+﻿@using OilDiversity.Web.Models
+@using OilDiversity.Web.Utility
+@model NewsPileUp
+@{
+                /**/
+
+                ViewBag.Title = TempData["NotFound"] ?? Model.Title;
+                Layout = "~/Views/Shared/_Layout.cshtml";
+
+                // meta tags view
+                ViewBag.MetaType = "Industry News Details";
+                ViewBag.MetaTitle = TempData["NotFound"] == null ? Model.Title : "";
+                ViewBag.MetaDescription = TempData["NotFound"] == null ? CommonTools.StripHtml(Model.Description) : "";
+                ViewBag.MetaImage = TempData["NotFound"] == null ? Model.ImageUrl : "";
+}
+
+<!-- details -->
+<div id="partial-wrapper" class="container animated fadeIn">
+    @if (TempData["NotFound"] != null)
+    {
+        <div class="row">
+            <div class="alert alert-info fade in">
+                <strong><i class="fa fa-exclamation-circle" aria-hidden="true"></i></strong>&nbsp;@TempData["NotFound"]
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <h1>@Model.Title</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4 text-center">
+                <div class="spacer"></div>
+                <img src="@Model.ImageUrl" alt="" class="img-responsive center-block">
+                <div class="spacer"></div>
+            </div>
+        </div>
+        <div class="row">
+            @Html.Raw(Model.Description)
+        </div>
+    }
+    @if (TempData["SourceName"] != null && TempData["SourceName"].ToString() != "OilDiversityBlog")
+    {
+        <div class="row">
+            <a href="@Model.Url" target="_blank"><code class="pull-right">@NewsPileUp.GetSourceName(TempData["SourceName"] + "")</code></a>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 spacer"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 spacer"></div>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-12 remove-padding pull-right">
+            <a href="/news" class="btn btn-default pull-right" title="Back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</div>

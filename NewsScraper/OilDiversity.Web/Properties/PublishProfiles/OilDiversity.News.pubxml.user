@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Client\Bev Riach\Publish\news</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>03/06/2019 13:25:06</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>03/06/2019 13:25:06</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>02/21/2019 15:29:24</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.pdb">
+      <publishTime>02/21/2019 15:29:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/OilDiversity.Web.dll">
+      <publishTime>03/06/2019 13:24:03</publishTime>
+    </File>
+    <File Include="bin/OilDiversity.Web.pdb">
+      <publishTime>03/06/2019 13:24:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>02/21/2019 15:29:26</publishTime>
+    </File>
+    <File Include="Content/css/custom.css">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="Content/css/style.css">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="Content/css/style.min.css">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="DynamicContent/HtmlTemplates/Card.html">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="DynamicContent/HtmlTemplates/CardWithoutSummary.html">
+      <publishTime>11/14/2016 11:57:54</publishTime>
+    </File>
+    <File Include="DynamicContent/HtmlTemplates/ImageLine.html">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="DynamicContent/HtmlTemplates/Line.html">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="DynamicContent/HtmlTemplates/SmallImageLine.html">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="DynamicContent/HtmlTemplates/WithSummary.html">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="DynamicContent/log.txt">
+      <publishTime>03/06/2019 13:23:28</publishTime>
+    </File>
+    <File Include="fav/android-icon-144x144.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/android-icon-192x192.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/android-icon-36x36.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/android-icon-48x48.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/android-icon-72x72.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/android-icon-96x96.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-114x114.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-120x120.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-144x144.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-152x152.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-180x180.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-57x57.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-60x60.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-72x72.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-76x76.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon-precomposed.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/apple-icon.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/browserconfig.xml">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/favicon-16x16.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/favicon-32x32.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/favicon-96x96.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/favicon.ico">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/manifest.json">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/ms-icon-144x144.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/ms-icon-150x150.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/ms-icon-310x310.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="fav/ms-icon-70x70.png">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/21/2019 15:29:20</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>03/06/2019 13:25:02</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/21/2019 15:29:24</publishTime>
+    </File>
+    <File Include="Views/News/Index.cshtml">
+      <publishTime>08/24/2016 13:08:57</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/06/2019 13:20:00</publishTime>
+    </File>
+    <File Include="Views/Show/Index.cshtml">
+      <publishTime>03/06/2019 13:16:05</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>02/21/2019 15:29:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/06/2019 13:25:01</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
